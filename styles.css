@@ -1,0 +1,151 @@
+body {
+  background-color: #f7cd75;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+a {text-decoration: none;
+color: #000;}
+.grid-container {
+  background-color: #fff;
+  margin: 0 auto;
+  height: 450px;
+  width: 45%;
+  margin-top: 10%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.grid-wallets {
+  background-color: #f2f2f2;
+  float: left;
+  width: 40%;
+  font-weight: 400;
+  padding: 45px 40px 45px 40px;
+  max-height: 450px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.grid-wallets::-webkit-scrollbar
+{
+  width: 0px;
+  background: transparent;
+}
+.grid-wallets .heading-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.grid-wallets h3 {
+  display: inline-block;
+}
+.grid-wallets .add-btn {
+  display: inline-block;
+  font-size: 26px;
+}
+
+.grid-wallets .card-container {
+  color: #727272;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #dedede;
+  padding:15px;
+  font-weight: 500;
+  margin-top: 30px;
+  transition: all 200ms linear 0s;
+}
+.grid-wallets .card-container:nth-child(2) {
+  margin-top: 0px;
+}
+.active {
+  border: 2px solid #8793c6!important;
+}
+.grid-wallets .card-container:hover,
+.grid-wallets .card-container:focus,
+.grid-wallets .card-container:active {
+  border: 2px solid #8793c6;
+  cursor: pointer;
+}
+.grid-wallets .card-container .card-logo {
+  max-width: 60px;
+  display:block;
+  margin-bottom: 15px;
+}
+.card-number {
+  display:block;
+  font-size: 18px;
+}
+.card-valid {
+  display: block;
+  font-size: 14px;
+}
+
+.grid-current-balance {
+  padding: 45px 40px 45px 40px;
+  max-height: 450px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.grid-current-balance::-webkit-scrollbar
+{
+  width: 0px;
+  background: transparent;
+}
+.grid-current-balance .heading-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.grid-current-balance .current-balance {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.budget-container {
+  border-top: 1px solid #dedede;
+}
+.transaction-block {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.transaction-block .symbol {
+  font-size: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #dedede;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+.transaction-block .transaction {
+  margin-left: -80px;
+}
+.transaction-block .transaction span {
+  display: block;
+}
+
+.transaction-block .transaction .transaction-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+.transaction-block .transaction .transaction-category {
+  font-size: 12px;
+  color: rgba(0,0,0,.6);
+}
+.positive {
+  font-weight: 700;
+  color: #98d372;
+}
+.negative {
+  font-weight: 700;
+  color: #8898c7;
+}
