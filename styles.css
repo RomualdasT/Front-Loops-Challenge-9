@@ -25,7 +25,7 @@ color: #000;}
   width: 40%;
   font-weight: 400;
   padding: 45px 40px 45px 40px;
-  max-height: 450px;
+  max-height: 100%;
   overflow-y: auto;
   box-sizing: border-box;
 }
@@ -87,7 +87,7 @@ color: #000;}
 
 .grid-current-balance {
   padding: 45px 40px 45px 40px;
-  max-height: 450px;
+  max-height: 100%;
   overflow-y: auto;
   box-sizing: border-box;
 }
@@ -148,4 +148,35 @@ color: #000;}
 .negative {
   font-weight: 700;
   color: #8898c7;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    height: 500px;
+    width: 85%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .grid-container {
+    margin-top: 0px;
+    height: auto;
+    width: 100%;
+  }
+
+  .grid-wallets {
+    width: 100%;
+  }
+  .grid-current-balance {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .transaction-block .transaction {
+    margin-left: 0px;
+  }
 }
